@@ -3,6 +3,7 @@ public class Person {
     private String name;
     private String surname;
     private int age;
+    private int maxSurname;
 
 
     @Override
@@ -13,10 +14,19 @@ public class Person {
                 ", age= " + age;
     }
 
+    public int getMaxSurname() {
+        return maxSurname;
+    }
+
+    public void setMaxSurname(int maxSurname) {
+        this.maxSurname = maxSurname;
+    }
+
     public Person(String name, String surname, int age) {
         this.name = name;
         this.surname = surname;
         this.age = age;
+        this.maxSurname = 2;
     }
 
 

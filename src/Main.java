@@ -7,12 +7,12 @@ public class Main {
 
 
         List<Person> people = new ArrayList<>();
-        people.add(new Person("Victor", "Petrovskiy", 13));
-        people.add(new Person("Dasha", "Smirnova", 20));
+        people.add(new Person("Victor", "Pan Pre Petrovskiy ", 13));
+        people.add(new Person("Dasha", "Mis La Smirnova", 20));
         people.add(new Person("Katerina", "Ivanov", 31));
-        people.add(new Person("Ilya", "Utkin", 17));
+        people.add(new Person("Ilya", "Van Utkin", 17));
 
-        Collections.sort(people, new Comparator());
+        Collections.sort(people, new surnameComparator());
         System.out.println(people);
 
 
