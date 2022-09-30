@@ -15,7 +15,7 @@ public class Main {
 
 
 
-        Collections.sort(people, new surnameComparator());
+        Collections.sort(people, new SurnameComparator());
         System.out.println(people);
 
 
