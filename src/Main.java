@@ -12,6 +12,7 @@ public class Main {
         people.add(new Person("Katerina", "Ivanov", 31));
         people.add(new Person("Ilya", "Van Utkin", 17));
 
+
         Collections.sort(people, new surnameComparator());
         System.out.println(people);
 
