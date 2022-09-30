@@ -1,9 +1,10 @@
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class Main {
+
     public static void main(String[] args) {
 
 
@@ -13,6 +14,8 @@ public class Main {
         people.add(new Person("Katerina", "Ivanov", 31));
         people.add(new Person("Ilya", "Van Utkin", 17));
 
+        Predicate<Person> chekerAge = Person -> Person.getAge() < 18;
+        people.removeIf(chekerAge);
 
 
         Collections.sort(people, new SurnameComparator());
